@@ -48,4 +48,4 @@ jobs:
            ARTIFACTORY_USERNAME_REF: ${{ secrets.ARTIFACTORY_USERNAME }}
            ARTIFACTORY_TOKEN_REF: ${{ secrets.ARTIFACTORY_TOKEN }}
            # BUILD_ENV: 'github-actions'
-        run: mvn -B deploy
+        run: ./mvnw -B -U clean deploy
