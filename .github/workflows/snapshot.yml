@@ -1,12 +1,16 @@
-name: Java CI with Maven
+name: Snapshot
 
 on:
   workflow_dispatch:
   
+  # Trigger the workflow on push or pull request,
+  # but only for the main branch
   push:
-    branches: [ "**" ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   build:
@@ -48,4 +52,4 @@ jobs:
            ARTIFACTORY_USERNAME_REF: ${{ secrets.ARTIFACTORY_USERNAME }}
            ARTIFACTORY_TOKEN_REF: ${{ secrets.ARTIFACTORY_TOKEN }}
            # BUILD_ENV: 'github-actions'
-        run: ./mvnw -B -U clean deploy
+        run: mvn -B deploy
