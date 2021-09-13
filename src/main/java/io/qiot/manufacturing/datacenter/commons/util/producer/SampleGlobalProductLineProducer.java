@@ -1,4 +1,4 @@
-package io.qiot.manufacturing.commons.util.producer;
+package io.qiot.manufacturing.datacenter.commons.util.producer;
 
 import java.time.Instant;
 import java.util.UUID;

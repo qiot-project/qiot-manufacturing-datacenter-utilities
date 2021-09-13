@@ -1,8 +1,8 @@
-package io.qiot.manufacturing.commons.service.persistence.events;
+package io.qiot.manufacturing.datacenter.commons.service.persistence.events;
 
 import com.influxdb.client.domain.WritePrecision;
 
-import io.qiot.manufacturing.datacenter.commons.domain.events.AbstractTelemetryDTO;
+import io.qiot.manufacturing.datacenter.commons.domain.telemetry.AbstractTelemetryDTO;
 import io.qiot.manufacturing.datacenter.commons.exception.DataServiceException;
 
 /**

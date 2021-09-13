@@ -1,6 +1,5 @@
-package io.qiot.manufacturing.commons.service.persistence.events;
+package io.qiot.manufacturing.datacenter.commons.service.persistence.events;
 
-import javax.enterprise.event.Observes;
 import javax.inject.Inject;
 
 import org.eclipse.microprofile.config.inject.ConfigProperty;
@@ -12,10 +11,8 @@ import com.influxdb.client.WriteApi;
 import com.influxdb.client.domain.WritePrecision;
 import com.influxdb.exceptions.InfluxException;
 
-import io.qiot.manufacturing.datacenter.commons.domain.events.AbstractTelemetryDTO;
+import io.qiot.manufacturing.datacenter.commons.domain.telemetry.AbstractTelemetryDTO;
 import io.qiot.manufacturing.datacenter.commons.exception.DataServiceException;
-import io.quarkus.runtime.ShutdownEvent;
-import io.quarkus.runtime.StartupEvent;
 
 /**
  * @author andreabattaglia
