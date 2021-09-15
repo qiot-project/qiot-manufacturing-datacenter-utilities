@@ -31,12 +31,10 @@ public abstract class AbstractTimeseriesRepository<M extends AbstractTelemetryDT
     public String connectionUrl;
     @ConfigProperty(name = "influxdb.token")
     public String token;
-    @ConfigProperty(name = "influxdb.orgId")
+    @ConfigProperty(name = "influxdb.org")
     public String orgId;
-    @ConfigProperty(name = "influxdb.data.bucketId")
+    @ConfigProperty(name = "influxdb.data.bucket")
     public String bucketId;
-    @ConfigProperty(name = "influxdb.data.bucketName")
-    public String bucketName;
 
     protected void onStart() {
         LOGGER.info("Connecting to: {}, token: {}, org: {}, bucketId: {}",
