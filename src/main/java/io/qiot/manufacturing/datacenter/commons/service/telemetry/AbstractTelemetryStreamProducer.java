@@ -28,7 +28,7 @@ public abstract class AbstractTelemetryStreamProducer<M extends AbstractTelemetr
     public String serialize(M telemetry)
             throws TelemetryTransformationException {
 
-        String telemetryJson;
+        String telemetryJson=null;
         try {
             telemetryJson = mapper.writeValueAsString(telemetry);
         } catch (JsonProcessingException e) {
@@ -39,7 +39,7 @@ public abstract class AbstractTelemetryStreamProducer<M extends AbstractTelemetr
 
             throw new TelemetryTransformationException(e);
         }
-        LOGGER.info("Output telemetry: {}", telemetryJson);
+        LOGGER.debug("Output telemetry: {}", telemetryJson);
         return telemetryJson;
 
     }
