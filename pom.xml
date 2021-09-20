@@ -45,6 +45,12 @@
             <artifactId>quarkus-jackson</artifactId>
             <scope>provided</scope>
         </dependency>
+        <!-- COMMONS -->
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-jackson</artifactId>
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>io.qiot.manufacturing.all</groupId>
             <artifactId>domain-model</artifactId>
@@ -74,6 +80,12 @@
             <groupId>com.influxdb</groupId>
             <artifactId>flux-dsl</artifactId>
             <version>${influxdb.client.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- STREAMING -->
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-kafka-client</artifactId>
             <scope>provided</scope>
         </dependency>
     </dependencies>
