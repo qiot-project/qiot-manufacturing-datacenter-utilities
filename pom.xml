@@ -67,12 +67,14 @@
         <dependency>
             <groupId>com.influxdb</groupId>
             <artifactId>flux-dsl</artifactId>
+            <version>${influxdb.client.version}</version>
             <scope>provided</scope>
         </dependency>
         <!-- STREAMING -->
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-kafka-client</artifactId>
+            <version>${influxdb.client.version}</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
