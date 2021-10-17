@@ -67,13 +67,11 @@
         <dependency>
             <groupId>com.influxdb</groupId>
             <artifactId>influxdb-client-java</artifactId>
-            <version>${influxdb.client.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.influxdb</groupId>
             <artifactId>flux-dsl</artifactId>
-            <version>${influxdb.client.version}</version>
             <scope>provided</scope>
         </dependency>
         <!-- STREAMING -->
