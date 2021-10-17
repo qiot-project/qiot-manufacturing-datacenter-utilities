@@ -40,11 +40,6 @@
             <artifactId>quarkus-arc</artifactId>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>io.quarkus</groupId>
-            <artifactId>quarkus-jackson</artifactId>
-            <scope>provided</scope>
-        </dependency>
         <!-- COMMONS -->
         <dependency>
             <groupId>io.quarkus</groupId>
