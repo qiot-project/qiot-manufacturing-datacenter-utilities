@@ -9,10 +9,7 @@ import io.quarkus.kafka.client.serialization.ObjectMapperDeserializer;
  */
 public class MachinerySubscriptionRequestDeserializer
         extends ObjectMapperDeserializer<MachinerySubscriptionRequest> {
-
-    public MachinerySubscriptionRequestDeserializer(
-            Class<MachinerySubscriptionRequest> type) {
-        super(type);
+    public MachinerySubscriptionRequestDeserializer() {
+        super(MachinerySubscriptionRequest.class);
     }
-
 }
