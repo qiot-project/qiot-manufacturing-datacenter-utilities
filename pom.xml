@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.qiot.manufacturing.datacenter</groupId>
     <artifactId>utilities</artifactId>
-    <version>1.0.5-SNAPSHOT</version>
+    <version>1.0.6-SNAPSHOT</version>
     <parent>
         <groupId>io.qiot.manufacturing</groupId>
         <artifactId>parent</artifactId>
